@@ -1,4 +1,5 @@
 var debug = process.env.NODE_ENV !== "production";
+var path = require('path');
 var webpack = require('webpack');
 const BabiliPlugin = require("babili-webpack-plugin");
 const UglifyJsPlugin = require('uglifyjs-webpack-plugin');
