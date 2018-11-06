@@ -1,0 +1,19 @@
+{
+  "name": "bundler-2",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "webpack --mode production",
+    "build:dev": "webpack --mode development",
+    "build:prod": "webpack --mode production"
+  },
+  "author": "Muhammad Javed Khalil",
+  "license": "ISC",
+  "devDependencies": {
+    "babili-webpack-plugin": "^0.1.2",
+    "uglifyjs-webpack-plugin": "^2.0.1",
+    "webpack": "^4.25.1",
+    "webpack-cli": "^3.1.2"
+  }
+}

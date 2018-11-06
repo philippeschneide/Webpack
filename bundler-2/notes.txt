@@ -1,0 +1,28 @@
+> npm init
+> npm install --save-dev webpack webpack-cli
+
+script > 
+
+"build": "webpack --mode production",
+"build:dev": "webpack --mode development",
+"build:prod": "webpack --mode production"
+
+
+> npm run build
+> npm run build:prod
+> npm run build:dev
+
+> npm run build:prod will produce minified main.min.js
+
+
+default output will be dist/main.js
+
+
+if you dont use --mode development, you will see a warning
+
+default webpack
+https://www.youtube.com/watch?v=cQakPE9LqKg
+webpack config
+https://www.youtube.com/watch?v=9kJVYpOqcVU
+webpack tips
+https://www.youtube.com/watch?v=zFoBYfMLUCM
