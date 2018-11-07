@@ -13,7 +13,14 @@
     "build:js2folder": "uglifyjs-folder inputfolder -eo outputfolder",
     "build": "webpack --mode production",
     "build:dev": "webpack --mode development",
-    "build:prod": "webpack --mode production"
+    "build:prod": "webpack --mode production",
+
+    "prelaunch-local-express": "node build_scripts/startMessage-launch-local-express.js",
+    "launch-local-express": "node build_scripts/srcServer.js",
+    "prelaunch-live-public": "node build_scripts/startMessage-launch-live-public.js",
+    "launch-live-public": "lt --port 3000 --subdomain mjklive",
+    "process-chain": "npm-run-all --parallel process-name-1 process-name-2"
+
   },
   "author": "Muhammad Javed Khalil",
   "license": "ISC",
@@ -47,13 +54,11 @@
     "jsdom": "9.8.0",
     "json-schema-faker": "^0.4.7",
     "json-server": "^0.14.0",
-    "localtunnel": "^1.9.1",
     "mini-css-extract-plugin": "^0.4.4",
     "mocha": "3.1.2",
     "nock": "8.1.0",
     "node-sass": "^4.5.3",
     "npm-run-all": "3.1.1",
-    "nsp": "2.6.2",
     "numeral": "1.5.3",
     "open": "0.0.5",
     "postcss-cli": "^4.1.1",
@@ -63,8 +68,13 @@
     "uglify-js": "^3.4.9",
     "uglifyjs-folder": "^1.5.1",
     "uglifyjs-webpack-plugin": "^2.0.1",
+    "live-server": "^1.2.0",
+    "localtunnel": "^1.9.1",
+    "http-server": "^0.11.1",
+    "browser-sync": "^2.26.3",
     "webpack": "1.13.2",
     "webpack-dev-middleware": "1.8.4",
+    "webpack-dev-server": "^3.1.10",
     "webpack-hot-middleware": "2.13.0",
     "webpack-md5-hash": "0.0.5",
     "xml-loader": "^1.2.1"

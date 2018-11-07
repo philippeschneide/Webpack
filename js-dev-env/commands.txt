@@ -1,0 +1,77 @@
+local server packages installed as dev dependency
+=================================================
+
+live-server
+browser-sync (can load same page on different pcs in same wifi or lan network)
+http-server
+webpack-dev-server
+localtunnel (server pages to localhost)
+
+Server Commands
+===============
+
+> npm run launch-local-express
+> npm run launch-live-public
+
+
+
+NPM Commands
+============
+fix issues
+> npm audit fix
+update packages
+> npm update
+
+Fire UP App
+############
+
+run index.html via express
+==========================
+> node build_scripts/srcServer.js
+or
+> npm run launch-local-express
+
+run index.html via localtunnel and share live publically
+========================================================
+localtunnel should be installed globally
+npm install localtunnel -g
+
+1- Fireup local server > npm run launch-local-express
+2- open second terminal and use command below
+> lt --port 3000
+or with your own subdomain
+> lt --port 3000 --subdomain mjklive
+or
+> npm run launch-live-public
+and share url that appears at terminal
+e.g. https://orange-grasshopper-50.localtunnel.me
+
+
+
+
+INFO
+=====
+prescript and postscript
+
+pre{scriptname} in scripts is just instruction for a different script to run before {scriptname}
+
+For
+
+"prelaunch-local-express": "node build_scripts/startMessage-launch-local-express.js",
+"launch-local-express": "node build_scripts/srcServer.js",
+
+node build_scripts/startMessage-launch-local-express.js
+will fire before
+node build_scripts/srcServer.js
+
+you dont need to use prelaunch-local-express
+launch-local-express will fire prelaunch-local-express before its execution
+
+
+
+
+
+
+
+
+
