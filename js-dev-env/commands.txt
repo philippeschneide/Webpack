@@ -10,8 +10,12 @@ localtunnel (server pages to localhost)
 Server Commands
 ===============
 
+> npm audit fix
+> npm install
+
 > npm run launch-local-express
 > npm run launch-live-public
+
 
 
 
