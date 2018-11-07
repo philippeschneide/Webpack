@@ -1,0 +1,104 @@
+Code editors
+=============
+Web storm
+Atom
+Brackets
+Visual Studio Code
+
+Package Management
+==================
+Bower
+Jam
+NPM
+JSPM
+Volo
+
+Development Webservers
+=======================
+http-server
+budo
+live-server
+Express
+Webpack dev server
+Browser sync
+
+Share work in progress
+======================
+localtunnel
+ngrok
+surge
+now
+
+Automation
+==========
+Grunt
+Gulp
+npm scripts
+
+Transpiling
+===========
+Babel
+Typescript
+Elm
+
+Bundling
+========
+Browserify
+Webpack
+Rollup
+JSPM
+
+Linting
+=======
+JSLint
+JSHint
+ESLint
+
+Testing and Continuous Integration
+==================================
+Mocha
+QUnit
+Jasmine
+AVA
+Jest
+Tape
+
+Testing and Integration / Servers
+=================================
+Travis
+CircleCl
+Appveyor
+Semaphore
+Jenkins
+SnapCl
+
+HTTP Call Approaches
+====================
+Node > http request
+Browser > XMLHttpRequest, jQuery, Fetch
+Node and Browser > isomorphic-fetch, xhr, SuperAgent, Axios
+
+Production Build
+================
+hard code > Manipulate via Node > html-webpack-plugin
+
+Path to production
+==================
+npm start
+npm run build
+npm run deploy
+
+Deployment Platforms
+====================
+Amazon Web services
+Google Cloud Platform
+Pubstorm
+Microsoft Azure
+Heroku
+Github
+Firebase
+Surge
+
+
+
+
