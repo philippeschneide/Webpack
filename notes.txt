@@ -1,8 +1,12 @@
-https://hackernoon.com/a-tale-of-webpack-4-and-how-to-finally-configure-it-in-the-right-way-4e94c8e7e5c1
+
 
 
 > npm init
 > npm install --save-dev webpack webpack-cli
 
 
+https://hackernoon.com/a-tale-of-webpack-4-and-how-to-finally-configure-it-in-the-right-way-4e94c8e7e5c1
+https://medium.com/javascript-training/beginner-s-guide-to-webpack-b1f1a3638460
+https://medium.com/@dylanavery720/npmmmm-1-dev-dependencies-dependencies-8931c2583b0c
 
+https://webpack.js.org/configuration/

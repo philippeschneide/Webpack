@@ -1,0 +1,152 @@
+npm install webpack webpack-cli --save-dev
+npm install --save-dev style-loader css-loader
+npm install --save-dev file-loader
+
+webpack config file generators
+==============================
+https://generatewebpackconfig.netlify.com/
+https://webpack.jakoblind.no/
+
+
+If a webpack.config.js is present, the webpack command picks it up by default.
+"build": "webpack"
+> npm run build
+
+Entry
+-----
+module.exports = {
+  entry: './src/index.js'
+};
+
+Output
+-------
+./dist/main.js
+
+Loaders
+-------
+loaders have two properties in your webpack configuration:
+The test property identifies which file or files should be transformed.
+The use property indicates which loader should be used to do the transforming.
+
+Plugins
+-------
+https://webpack.js.org/concepts/plugins/
+https://webpack.js.org/plugins/
+extend webpacks capabilities
+bundle optimization, asset management and injection of environment variables
+In order to use a plugin, you need to require() it and add it to the plugins array
+Since you can use a plugin multiple times in a config for different purposes, you need to create an instance of it by calling it with the new operator.
+
+const HtmlWebpackPlugin = require('html-webpack-plugin'); //installed via npm
+const webpack = require('webpack'); //to access built-in plugins
+
+module: {
+    rules: [
+      { test: /\.txt$/, use: 'raw-loader' }
+    ]
+  },
+  plugins: [
+    new HtmlWebpackPlugin({template: './src/index.html'})
+  ]
+
+
+Mode
+----
+
+module.exports = {
+  mode: 'production'
+};
+
+Guides
+------
+Manually Bundling an Application
+https://www.youtube.com/watch?v=UNMkLHzofQI
+Live Coding a Simple Module Bundler
+https://www.youtube.com/watch?v=Gc9-7PBqOC8
+Detailed Explanation of a Simple Module Bundler
+https://github.com/ronami/minipack
+
+webpack.config.js
+-----------------
+const path = require('path');
+module.exports = {
+  mode: 'production',	
+  entry: './src/index.js'
+  output: {
+    path: path.resolve(__dirname, 'dist'),
+    filename: 'bundle.js'
+  }
+};
+
+
+Project
+-------
+  webpack-demo
+  |- package.json
++ |- index.html
++ |- /src
++   |- index.js
+
+
+
+
+webpack plugins
+===============
+babel-minify
+> npm install babel-minify-webpack-plugin --save-dev
+https://webpack.js.org/plugins/babel-minify-webpack-plugin/
+
+HtmlWebpackPlugin
+> npm install --save-dev html-webpack-plugin
+https://webpack.js.org/plugins/html-webpack-plugin/
+
+MiniCssExtractPlugin
+> npm install --save-dev mini-css-extract-plugin
+https://webpack.js.org/plugins/mini-css-extract-plugin/
+
+UglifyjsWebpackPlugin
+> npm install uglifyjs-webpack-plugin --save-dev
+https://webpack.js.org/plugins/uglifyjs-webpack-plugin/
+
+
+webpack module is
+-----------------
+- An ES2015 import statement
+- A CommonJS require() statement
+- An AMD define and require statement
+- An @import statement inside of a css/sass/less file.
+- An image url in a stylesheet (url(...)) or html (<img src=...>) file.
+
+modules examples: TypeScript, Sass
+
+
+
+
+Multiple Entry Points
+---------------------
+https://webpack.js.org/concepts/output/
+--------------------
+module.exports = {
+  entry: {
+    app: './src/app.js',
+    search: './src/search.js'
+  },
+  output: {
+    filename: '[name].js',
+    path: __dirname + '/dist'
+  }
+};
+
+
+
+LOADING FONTS AND IMAGES AND fILES OR DATA (XML) & Global Assets
+=================================================================
+css loader / important / read 
+------------------------------
+npm install --save-dev style-loader css-loader
+npm install --save-dev csv-loader xml-loader
+npm install --save-dev file-loader
+--------------------------------
+https://webpack.js.org/guides/asset-management/
+In order to import a CSS file from within a JavaScript module, you need to install and add the style-loader and css-loader to your module configuration. 
+
