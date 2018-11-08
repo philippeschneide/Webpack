@@ -32,6 +32,8 @@ Fire UP App
 run index.html via express
 ==========================
 > node build_scripts/srcServer.js
+or if you are using babel and es6 and have const instead of var and import instead of require
+> babel-node build_scripts/srcServer.js
 or
 > npm run launch-local-express
 
