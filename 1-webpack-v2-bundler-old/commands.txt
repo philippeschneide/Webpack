@@ -1,0 +1,22 @@
+This script depends on old webpack 2
+
+run index.html to see output.
+dist folder contains js bundle and minified js bundle
+
+> yarn run build
+> yarn run build:prod
+
+or
+
+> npm run build
+> npm run build:prod
+
+
+
+"devDependencies": {
+    "webpack": "2.2.1"
+}
+
+
+
+https://www.youtube.com/watch?v=GU-2T7k9NfI

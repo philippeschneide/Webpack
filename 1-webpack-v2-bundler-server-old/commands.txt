@@ -1,0 +1,31 @@
+This script depends on old webpack 2 and webpack dev server
+
+run build script and go to http://localhost:8080
+
+or 
+
+run index.html to see output.
+dist folder contains js bundle and minified js bundle
+
+> yarn run build
+> yarn run build:prod
+
+or
+
+> npm run build
+> npm run build:prod
+
+yarn run build > wont throw bundle.js in dist and it will server bundle.js from memory when u browse localhost
+yarn run build:prod will create bundle minified file
+
+you can remove dist folder and still build will give you output at localhost
+
+Fixed dependencies
+==================
+
+"devDependencies": {
+    "webpack": "2.2.1",
+    "webpack-dev-server": "2.4.1"
+}
+
+https://www.youtube.com/watch?v=HNRt0lODCQM

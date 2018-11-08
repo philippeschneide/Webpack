@@ -1,0 +1,57 @@
+- transpile from es6 to es5
+- Combine js files and get minified version
+- convert scss and get main.css
+in dist folder
+
+scss + js bundler + transpiler (es6 to es5) with old fixed dependencies
+
+==================================
+depends on webpack.config.js file
+==================================
+
+
+This script depends on old webpack 2 and webpack dev server and some loaders
+
+run build script and go to http://localhost:8080
+
+or 
+
+run index.html to see output.
+dist folder contains minified js bundle and main.css converted from main.scss
+
+> yarn run build
+> yarn run build:prod
+
+or
+
+> npm run build
+> npm run build:prod
+
+yarn run build > wont throw bundle.min.js or main.css in dist and it will server bundle.min.js from memory when u browse localhost
+yarn run build:prod will create bundle minified file
+
+you can remove dist folder and still build will give you output at localhost
+
+Fixed dependencies
+==================
+
+  "devDependencies": {
+    "babel-core": "6.24.0",
+    "babel-loader": "6.4.1",
+    "babel-preset-es2015": "6.24.0",
+    "css-loader": "0.27.3",
+    "extract-text-webpack-plugin": "2.1.0",
+    "node-sass": "^4.10.0",
+    "sass-loader": "6.0.3",
+    "webpack": "2.3.2",
+    "webpack-dev-server": "2.4.2"
+  }
+
+
+https://www.youtube.com/watch?v=8vnkM8JgjpU
+
+
+
+
+
+

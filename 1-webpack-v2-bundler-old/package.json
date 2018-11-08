@@ -1,0 +1,15 @@
+{
+  "name": "1-webpack-v2-old",
+  "version": "1.0.0",
+  "description": "Old webpack 2 bundling",
+  "main": "index.js",
+  "author": "Muhammad Javed Khalil",
+  "license": "MIT",
+  "scripts": {
+    "build": "webpack src/js/app.js dist/bundle.js",
+    "build:prod": "webpack src/js/app.js dist/bundle.min.js -p"
+  },
+  "devDependencies": {
+    "webpack": "2.2.1"
+  }
+}
