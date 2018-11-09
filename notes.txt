@@ -10,3 +10,8 @@ https://medium.com/javascript-training/beginner-s-guide-to-webpack-b1f1a3638460
 https://medium.com/@dylanavery720/npmmmm-1-dev-dependencies-dependencies-8931c2583b0c
 
 https://webpack.js.org/configuration/
+
+
+you can generate webpack config from these tools also 
+https://generatewebpackconfig.netlify.com/
+https://webpack.jakoblind.no/
