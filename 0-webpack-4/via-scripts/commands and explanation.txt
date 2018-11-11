@@ -1,0 +1,60 @@
+The only command you need
+> yarn run build:all
+
+This will get js file from src and transpile, minify and give output in dist assets/scripts/
+script
+and it will take scss from src and convert it into minified and regular css files in dist/styles
+"build:all": "npm-run-all SassToCSS cssToPrefixed cssPrefixedToCSS cssToMin build:dev build:prod"
+--------------------
+
+> yarn run start:server
+webpack will initiate server from root directory in development mode
+script
+"start:server": "webpack-dev-server --mode development --open",
+--------------------
+
+> yarn run build
+Default webpack process > will ge index.js from src and give output in dist file named as main.js
+script
+"build": "webpack",
+--------------------
+
+> yarn run build:dev
+webpack processing in dev mode bind with babel-loader with entry point and output file paths
+It wll create app.js
+script
+"build:dev": "webpack --mode development --module-bind js=babel-loader ./src/index.js --output ./dist/assets/scripts/app.js",
+--------------------
+
+> yarn run build:prod
+webpack processing in production mode bind with babel-loader with entry point and output file paths
+It wll create app.min.js (minified version)
+script
+"build:prod": "webpack --mode production --module-bind js=babel-loader ./src/index.js --output ./dist/assets/scripts/app.min.js",
+
+
+Webpack 4 default usage for development and production output - take script from src/index.js and output will be dist/main.js - webpack -p will produce minified version
+
+"build:dev": "webpack -d",
+"build:prod": "webpack -p",
+
+You need .babelrc file with preset defined for babel to work
+This script is without webpack config file
+
+{
+    "presets": [
+        "@babel/preset-env"
+    ]
+}
+
+Minimum Dependency Requirement for script are 
+=============================================
+webpack-cli
+webpack
+@babel/core
+babel-loader
+@babel/preset-env
+node-sass
+postcss
+autoprefixer
+webpack-dev-server

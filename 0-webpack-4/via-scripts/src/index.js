@@ -1,5 +1,6 @@
-console.log('Hello World from wfwwindexjs');
-console.log('Hello World eewww  ererre');
+require('./scripts/second.js')
+console.log('Hello World from index js script');
+console.log('Hello World again');
 
 let Func = (a, b = 10) => {
  return a + b; 

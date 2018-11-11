@@ -91,9 +91,20 @@
   !*** ./src/index.js ***!
   \**********************/
 /*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+eval("__webpack_require__(/*! ./scripts/second.js */ \"./src/scripts/second.js\");\n\nconsole.log('Hello World from index js script');\nconsole.log('Hello World again');\n\nvar Func = function Func(a) {\n  var b = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : 10;\n  return a + b;\n};\n\nvar displayresult = Func(20); // 20 + 10 = 30\n\nconsole.log(displayresult);\n\n//# sourceURL=webpack:///./src/index.js?");
+
+/***/ }),
+
+/***/ "./src/scripts/second.js":
+/*!*******************************!*\
+  !*** ./src/scripts/second.js ***!
+  \*******************************/
+/*! no static exports found */
 /***/ (function(module, exports) {
 
-eval("console.log('Hello World from index.js');\n\n//# sourceURL=webpack:///./src/index.js?");
+eval("console.log('Hello World from second');\n\n//# sourceURL=webpack:///./src/scripts/second.js?");
 
 /***/ })
 

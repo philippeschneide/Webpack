@@ -15,3 +15,31 @@ https://webpack.js.org/configuration/
 you can generate webpack config from these tools also 
 https://generatewebpackconfig.netlify.com/
 https://webpack.jakoblind.no/
+
+
+More than one file test / js and jsx in case below
+==================================================
+{
+    test: /\.(js|jsx)$/,
+    loader: 'babel-loader',
+    exclude: /node_modules/
+}
+
+More than one entry points
+============================
+entry:{
+		scripts: "./javascript/backgrounds.js",
+		styles: "./less/bgStyles.less"
+	},
+
+	output:{
+		path: __dirname + "/html/",
+		filename: "js/[name].js"
+	},
+
+
+
+less config
+============
+https://github.com/webpack-contrib/extract-text-webpack-plugin/issues/552
+
