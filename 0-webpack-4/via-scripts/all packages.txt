@@ -1,0 +1,17 @@
+npm install --save-dev autoprefixer babel-cli babel-core babel-loader babel-minify-webpack-plugin babel-preset-env
+npm install --save-dev babel-register compression cross-env css-loader csv-loader eslint eslint-plugin-import
+npm install --save-dev extract-text-webpack-plugin file-loader html-webpack-plugin jsdom mini-css-extract-plugin
+npm install --save-dev node-sass npm-run-all postcss-cli sass-loader style-loader uglify-js uglifyjs-folder
+npm install --save-dev uglifyjs-webpack-plugin localtunnel browser-sync webpack webpack-dev-middleware
+npm install --save-dev webpack-dev-server webpack-hot-middleware xml-loader webpack webpack-cli eslint-loader
+npm install --save-dev url-loader body-parser express nodemon babel-polyfill
+
+or
+
+yarn add --dev autoprefixer babel-cli babel-core babel-loader babel-minify-webpack-plugin babel-preset-env 
+yarn add --dev babel-register compression cross-env css-loader csv-loader eslint eslint-plugin-import 
+yarn add --dev extract-text-webpack-plugin file-loader html-webpack-plugin jsdom mini-css-extract-plugin node-sass
+yarn add --dev npm-run-all postcss-cli sass-loader style-loader uglify-js uglifyjs-folder 
+yarn add --dev uglifyjs-webpack-plugin localtunnel browser-sync webpack webpack-dev-middleware 
+yarn add --dev webpack-dev-server webpack-hot-middleware xml-loader webpack webpack-cli eslint-loader 
+yarn add --dev url-loader body-parser express nodemon babel-polyfill

@@ -1,0 +1,31 @@
+babel 7 changes
+================
+babel-preset-es2015
+babel-preset-es2016
+babel-preset-es2017
+babel-preset-latest
+A combination of the above ^
+
+These presets should be substituted with the "env" preset.
+
+babel-preset-env
+
+@babel/core is dependency
+babylon is now @babel/parser
+
+Your dependencies will need to be modified like so:
+babel-cli -> @babel/cli. For us, we basically started by replacing babel- with @babel/.
+
+module.exports = {
+  presets: ["@babel/env"], // "@babel/preset-env"
+  plugins: ["@babel/transform-arrow-functions"], // same as "@babel/plugin-transform-arrow-functions"
+};
+
+Remove the year from package names
+e.g.
+@babel/plugin-transform-es2015-classes became @babel/plugin-transform-classes
+
+use strict in commonJS
+"use strict";
+
+

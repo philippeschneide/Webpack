@@ -1,0 +1,12 @@
+@import 'colors';
+
+body {
+	font-size: 16px;
+	transform: translate(0%,0%);
+}
+.box {
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: row;
+	align-items: center;
+}

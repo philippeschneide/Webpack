@@ -1,0 +1,6 @@
+https://www.valentinog.com/blog/webpack-tutorial/
+https://medium.com/@jeffrey.allen.lewis/the-ultimate-2018-webpack-4-and-babel-setup-guide-npm-yarn-dependencies-compared-entry-points-866b577da6a
+https://flaviocopes.com/babel/
+http://ccoenraets.github.io/es6-tutorial-data/babel-webpack/
+https://www.reddit.com/r/javascript/comments/8zm8md/the_ultimate_2018_webpack_4_and_babel_setup_guide/
+https://www.sitepoint.com/beginners-guide-webpack-module-bundling/
