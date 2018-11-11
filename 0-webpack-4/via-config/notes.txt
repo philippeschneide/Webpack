@@ -1,0 +1,8 @@
+https://www.robinwieruch.de/minimal-react-webpack-babel-setup/
+https://github.com/webpack-contrib/extract-text-webpack-plugin/issues/552
+https://stackoverflow.com/questions/49547513/how-to-set-up-webpack-custom-entry-and-output
+https://www.sitepoint.com/beginners-guide-webpack-module-bundling/
+http://ccoenraets.github.io/es6-tutorial-data/babel-webpack/
+https://medium.com/@jeffrey.allen.lewis/the-ultimate-2018-webpack-4-and-babel-setup-guide-npm-yarn-dependencies-compared-entry-points-866b577da6a
+https://www.valentinog.com/blog/from-gulp-to-webpack-4-tutorial/#Switching_from_Gulp_to_webpack_compiling_SASS_to_CSS_adding_vendor_prefixes_to_CSS
+https://www.valentinog.com/blog/webpack-tutorial/
