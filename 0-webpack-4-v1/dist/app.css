@@ -1,0 +1,7 @@
+.sass-test {
+  padding: 20px;
+  background-color: #fff; }
+  .sass-test h3 {
+    color: red; }
+  .sass-test p {
+    color: green; }
