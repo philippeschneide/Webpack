@@ -6,3 +6,6 @@ function add(a, b){
 module.exports = { 
     add 
 };
+
+// or 
+// export default add;
