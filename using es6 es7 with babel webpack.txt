@@ -1,0 +1,4 @@
+http://jamesknelson.com/using-es6-in-the-browser-with-babel-6-and-webpack/
+
+https://github.com/jamesknelson/webpack-black-triangle
+https://github.com/unicorn-standard/starter-kit
